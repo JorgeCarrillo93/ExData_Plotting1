@@ -1,7 +1,7 @@
 data <- read.csv("./household_power_consumption.txt", sep = ";", header= TRUE,
                  colClasses = c("character", "character",
                                 "numeric", "numeric", "numeric", "numeric",
-                                "numeric", "numeric", na.strings = "?" ))
+                                "numeric", "numeric"), na.strings = "?" )
 
 data$Date <- as.Date(data$Date, "%d/%m/%Y")
 
